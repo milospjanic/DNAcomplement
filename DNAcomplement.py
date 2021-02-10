@@ -1,4 +1,4 @@
-def complementary_strand(self, strand):
+def complementary_strand(strand):
         ''' Takes a DNA strand string and finds its opposite base pair match. '''
         strand = strand.upper()
         newstrand = ""
@@ -16,3 +16,6 @@ def complementary_strand(self, strand):
                 newstrand += "G"
 
         return newstrand
+        
+print(complementary_strand("ATGCCCCCC"))
+print(complementary_strand("ATGCCCCCC")[::-1])
